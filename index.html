@@ -198,6 +198,96 @@
           </a>
         </div>
       </section>
+      <section id="ormawa">
+        <h2>Organisasi mahasiswa & Unit Kegiatan Mahasiswa</h2>
+        <div class="wrap">
+          <table
+            style="
+              width: 80%;
+              box-shadow: 0 5px 10px #3f3f3f27;
+              margin: 2rem auto 4rem;
+              padding: 1.5rem;
+              border-radius: 1rem;
+            "
+            border="1"
+          >
+            <thead style="padding: 1rem; background: #000; color: #fff">
+              <tr style="text-align: center">
+                <td>No</td>
+                <td>Nama</td>
+                <td>Anggota</td>
+                <td>Link</td>
+              </tr>
+            </thead>
+            <tbody style="text-align: center">
+              <tr>
+                <td>1</td>
+                <td>Badan Eksekutif Mahasiswa</td>
+                <td>200</td>
+                <td rowspan="10"><a href="https://poltektegal.ac.id">Daftar Keanggotaan</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Himpunan Mahasiswa Prodi</td>
+                <td>300</td>
+                
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pencak Silat</td>
+                <td>50</td>
+                
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Karate</td>
+                <td>40</td>
+                
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>English Club</td>
+                <td>80</td>
+                
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Rana 9</td>
+                <td>50</td>
+                
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>FORTI</td>
+                <td>60</td>
+                
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Plug-in</td>
+                <td>40</td>
+                
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Mapala</td>
+                <td>20</td>
+                
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Robotika</td>
+                <td>30</td>
+                
+              </tr>
+              <tr style="background: #999999; color: #fff"">
+                <td colspan="2">Total Anggota :</td>
+                <td>870</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
       <section id="lokasi">
         <h2>Lokasi Kampus</h2>
         <iframe
@@ -266,6 +356,103 @@
           >
             <i class="fa-brands fa-youtube"></i> Politeknik Harapan Bersama
           </a>
+        </div>
+      </section>
+      <section id="daftar">
+        <div class="wrap">
+          <form action="/" method="GET">
+            <h2>Formulir Pendaftaran</h2>
+            <div class="item">
+              <label for="name">Nama</label>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="contoh: John Doe"
+                  id="name"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <label for="email">Email</label>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="contoh: johndoe@gmail.com"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <label for="number">No HP</label>
+              <div>
+                <input
+                  type="number"
+                  name="number"
+                  placeholder="contoh: 08123456789"
+                  id="number"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <label>Jenis Kelamin</label>
+              <div class="jk">
+                <input type="radio" name="jenis_kelamin" id="laki_laki" />
+                Laki-laki
+                <input type="radio" name="jenis_kelamin" id="perempuan" />
+                Perempuan
+              </div>
+            </div>
+            <div class="item">
+              <label for="number">Alamat</label>
+              <div>
+                <textarea
+                  name="Alamat"
+                  id="Alamat"
+                  cols="30"
+                  placeholder="masukan alamat lengkap di sini..."
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="item">
+              <label>Peminatan</label>
+              <div class="peminatan">
+                <div>
+                  <input type="checkbox" name="komputer" id="komputer" />
+                  Komputer
+                </div>
+                <div>
+                  <input type="checkbox" name="Mesin" id="Mesin" />
+                  Mesin
+                </div>
+                <div>
+                  <input type="checkbox" name="kesehatan" id="kesehatan" />
+                  Kesehatan
+                </div>
+                <div>
+                  <input type="checkbox" name="kesenian" id="kesenian" />
+                  Kesenian
+                </div>
+                <div>
+                  <input type="checkbox" name="Akuntansi" id="Akuntansi" />
+                  Akuntansi
+                </div>
+                <div>
+                  <input type="checkbox" name="Hukum" id="Hukum" />
+                  Hukum
+                </div>
+                <div>
+                  <input type="checkbox" name="Olahraga" id="Olahraga" />
+                  Olahraga
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <button type="submit">Kirim Data</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>

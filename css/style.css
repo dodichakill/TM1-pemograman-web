@@ -43,6 +43,8 @@ header .logo img {
   width: 44px;
 }
 
+/* header end */
+
 .logo p {
   font-size: 20px;
   font-weight: 600;
@@ -185,6 +187,78 @@ main {
 }
 
 /* contact end */
+
+/* form start */
+
+#daftar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto 1rem;
+}
+
+#daftar .wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#daftar form {
+  display: flex;
+  flex-direction: column;
+}
+
+#daftar h2 {
+  text-align: center;
+  color: #333;
+}
+
+#daftar .item {
+  margin-bottom: 20px;
+}
+
+#daftar label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#daftar input,
+#daftar textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#daftar .jk {
+  padding: 1rem;
+  display: flex;
+}
+
+#daftar .jk input {
+  width: 100px;
+}
+#daftar .item .peminatan {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item .peminatan div {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.item button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  background: blue;
+  color: white;
+}
+/* form end */
 
 /* footer start */
 footer {
