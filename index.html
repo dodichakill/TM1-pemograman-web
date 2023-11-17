@@ -52,6 +52,15 @@
         </div>
       </div>
     </header>
+    <!-- mobile nav -->
+    <nav class="mobile">
+      <a href="#beranda"><i class="fa-solid fa-house"></i> Beranda</a>
+      <a href="#prodi"
+        ><i class="fa-solid fa-graduation-cap"></i> Program Studi</a
+      >
+      <a href="#lokasi"><i class="fa-solid fa-location-dot"></i> Lokasi</a>
+      <a href="#kontak"><i class="fa-solid fa-address-book"></i> Kontak</a>
+    </nav>
     <div class="hero" id="beranda">
       <div class="left" data-aos="fade-right">
         <h1>Selamat Datang di Poltek Harber</h1>
@@ -75,12 +84,13 @@
           >Daftar Sekarang</a
         >
       </div>
-      <img
-        src="img/campus.jpg"
-        alt="images campus"
-        data-aos="fade-left"
-        data-aos-delay="400"
-      />
+      <video
+        src="https://poltekharber.ac.id/files/video/b9631196d2acec9dd438c7540aa117b5.mp4"
+        autoplay
+        loop
+        muted
+        poster="img/campus.jpg"
+      ></video>
     </div>
     <main>
       <section id="prodi">
@@ -480,20 +490,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      // Mendeteksi apakah browser berada di tampilan mobile
-      function isMobile() {
-        return window.innerWidth <= 768; // Ubah angka ini sesuai dengan breakpoint yang Anda inginkan
-      }
-
-      // Menampilkan pesan alert jika berada di tampilan mobile
-      function showAlertIfMobile() {
-        if (isMobile()) {
-          alert("Proyek ini belum menerapkan responsive design.");
-        }
-      }
-
-      // Panggil fungsi saat halaman dimuat
-      window.addEventListener("load", showAlertIfMobile);
     </script>
   </body>
 </html>

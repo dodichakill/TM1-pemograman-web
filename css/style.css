@@ -24,6 +24,7 @@ header {
   top: 0;
   z-index: 9999999;
 }
+
 header .wrap {
   display: flex;
   width: 100%;
@@ -66,16 +67,16 @@ header .logo img {
 .menu li a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: rgba(16, 38, 66, 0.788);
   align-items: center;
   display: flex;
   padding: 5px 12px;
   border-radius: 10px;
-  background: rgba(28, 114, 226, 0.575);
 }
 
 .menu li a:hover {
   background: rgba(28, 114, 226, 0.788);
+  color: white;
 }
 i.fa-solid,
 i.fa-brands {
@@ -95,6 +96,7 @@ i.fa-brands {
 }
 .hero .left {
   width: 45rem;
+  margin-left: 4rem;
 }
 
 .left .desc {
@@ -116,11 +118,11 @@ i.fa-brands {
 .left a:hover {
   background: rgb(8, 8, 233);
 }
-.hero img {
-  width: 35rem;
-  height: 30rem;
-  border-radius: 10rem;
-  box-shadow: 0 5px 10px #3f3f3f27;
+.hero video {
+  width: 85vh;
+  border-radius: 0.5rem;
+  height: 100vh;
+  margin-right: 2rem;
 }
 /* hero end */
 
@@ -135,6 +137,7 @@ main {
   display: flex;
   width: 100%;
   gap: 10px;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
@@ -187,6 +190,20 @@ main {
 }
 
 /* contact end */
+
+/* ormawa start */
+#ormawa table td {
+  padding: 0.5rem;
+}
+
+table a {
+  padding: 1rem;
+  background: rgba(63, 61, 236, 0.74);
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+/* ormawa end */
 
 /* form start */
 
@@ -257,6 +274,7 @@ main {
   font-size: 1.1rem;
   background: blue;
   color: white;
+  cursor: pointer;
 }
 /* form end */
 
@@ -269,3 +287,104 @@ footer {
   background: black;
 }
 /* footer end */
+
+/* Media query untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: none;
+  }
+
+  /* nav mobile */
+  nav.mobile {
+    padding: 1rem;
+    background: rgba(28, 114, 226, 1);
+    color: white;
+    display: flex;
+    z-index: 9999;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  nav.mobile a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav.mobile a i {
+    margin-bottom: 0.5rem;
+    font-size: 32;
+  }
+
+  video {
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  main {
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .hero .left {
+    width: 80%;
+    margin-left: 0;
+    padding: 2rem;
+  }
+
+  .hero video {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .list-prodi .item-prodi {
+    width: 100%;
+  }
+  form h2 {
+    margin-bottom: 1rem;
+  }
+
+  #kontak .item {
+    width: 100%;
+  }
+
+  table td a {
+    padding: 0.2rem;
+    line-height: 1.5rem;
+    border-radius: 0;
+  }
+  #daftar {
+    width: 90%;
+  }
+
+  #daftar .jk {
+    padding: 0;
+  }
+
+  #daftar .wrap {
+    max-width: 100%;
+  }
+
+  #daftar .item .peminatan {
+    flex-direction: column;
+  }
+
+  footer {
+    padding-bottom: 6rem;
+  }
+}
