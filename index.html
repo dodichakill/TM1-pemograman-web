@@ -470,7 +470,9 @@
               </div>
             </div>
             <div class="item">
-              <button type="submit">Kirim Data</button>
+              <button type="submit" class="btn-send" onclick="showAlert(event)">
+                Kirim Data
+              </button>
             </div>
           </form>
         </div>
@@ -490,6 +492,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      const showAlert = (e) => {
+        e.preventDefault();
+        alert("data berhasil dikirim");
+      };
     </script>
   </body>
 </html>
